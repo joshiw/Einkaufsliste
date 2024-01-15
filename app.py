@@ -6,7 +6,7 @@ bootstrap=Bootstrap(app)
 @app.route('/')
 def index():
     Einkaufsliste = PrettyTable(["Produkt","Menge","Gekauft"])
-    Einkaufsliste.add_row(["Äpfel","4"," "])
+    Einkaufsliste.add_row(["APPEL","4"," "])
     return render_template('index.html')
 if __name__=='__main__':
     app.run(debug=True)
